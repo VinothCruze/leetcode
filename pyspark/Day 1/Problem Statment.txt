@@ -1,0 +1,29 @@
+Salaries Differences
+Calculates the difference between the highest salaries in the marketing and engineering departments. Output just the absolute difference in salaries.
+
+Tables
+db_employee
+db_dept
+
+Expected output
+salary_difference
+2400
+Input dataframes
+#db_employee
+id:
+bigint
+first_name:
+string
+last_name:
+string
+salary:
+bigint
+department_id:
+bigint
+
+#db_dept
+
+id:
+bigint
+department:
+string
