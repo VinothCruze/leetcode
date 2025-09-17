@@ -1,0 +1,30 @@
+Best Selling Item
+Find the best-selling item for each month (no need to separate months by year). The best-selling item is determined by the highest total sales amount, calculated as: total_paid = unitprice * quantity. Output the month, description of the item, and the total amount paid.
+
+Table
+online_retail
+Schema:
+invoiceno:
+string
+stockcode:
+string
+description:
+string
+quantity:
+bigint
+invoicedate:
+date
+unitprice:
+double
+customerid:
+double
+country:
+string
+
+Expected Output:
+month	description	total_paid
+1	LUNCH BAG SPACEBOY DESIGN	74.26
+2	REGENCY CAKESTAND 3 TIER	38.25
+3	PAPER BUNTING WHITE LACE	102
+4	SPACEBOY LUNCH BOX	23.4
+5	PAPER BUNTING WHITE LACE	51
