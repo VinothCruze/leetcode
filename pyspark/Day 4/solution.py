@@ -5,7 +5,8 @@ from pyspark.sql.window import Window
 
 
 # Start writing code
-sf_events = sf_events.withColumn("lead",lead(col("record_date"),2).over(Window         .partitionBy("user_id").orderBy("record_date")).alias("lead"))\
+sf_events = sf_events.withColumn("lead",lead(col("record_date"),2)
+                                 .over(Window.partitionBy("user_id").orderBy("record_date")).alias("lead"))\
             .withColumn('addtn', dateadd(sf_events.record_date, 2))\
             .filter(col('addtn') == col('lead'))\
             .select(col('user_id'))
