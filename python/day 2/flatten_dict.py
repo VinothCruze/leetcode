@@ -33,3 +33,8 @@ for k, v in data.items():
     print(f"{k}: {v}")
 output = flatten_dict(data)
 print(output)
+
+
+## to make it as json dict againa
+flat_dict = df.to_dict(orient="records")[0]
+print(flat_dict)
