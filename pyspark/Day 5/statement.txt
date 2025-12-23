@@ -1,0 +1,4 @@
+Problem Statement:
+Given a data frame with two columns, like employee and details. Return a list of words that occur the third-highest number of times among all the words in employee details.
+
+If a word occurs once for each employee, then we should count it as four, as it is equal to the number of employees.
